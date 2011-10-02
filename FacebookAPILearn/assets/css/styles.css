@@ -1,0 +1,112 @@
+/* 
+    Document   : styles
+    Created on : Aug 29, 2011, 9:42:39 PM
+    Author     : vishaknagashoka
+*/
+
+body
+{
+    background-color:skyblue;
+}
+
+div.topDiv
+{
+    position: relative;
+    height:500px;
+    top: 10%;
+    left: 3%
+}
+
+div.card
+{
+    position: absolute;
+    height: 100%;
+    left: 25%;
+    top: 5%;
+}
+
+div.picture
+{
+    position: absolute;
+    left: 32%;
+    top: 8%;
+}
+
+div.properties
+{
+    position:relative;
+    height:50%;
+}
+
+div.username
+{
+    position:absolute;
+    left: 40%;
+    top: 42%;
+    color: royalblue;
+}
+
+div.prop1val
+{
+    position:absolute;
+    color: white;
+    left:55%;
+    top:54%
+}
+
+div.prop1
+{
+    position:absolute; 
+    color: white;
+    left:30%;
+    top:54%; 
+}
+
+div.prop2val
+{
+    position:absolute;
+    color: white;
+    left:55%;
+    top:66%; 
+}
+
+div.prop2
+{
+    position:absolute;
+    color: white;
+    left:30%;
+    top:66%; 
+}
+
+div.prop3val 
+{
+    position:absolute;
+    color: white;
+    left:55%;
+    top:78%; 
+}
+
+div.prop3
+{
+    position:absolute;
+    color: white;
+    left:30%;
+    top:78%; 
+}
+
+div.prop4val
+{
+    position:absolute;
+    color: white;
+    left:55%;
+    top:92%; 
+}
+
+div.prop4
+{
+    position:absolute;
+    color: white;
+    left:30%;
+    top:92%; 
+}
+

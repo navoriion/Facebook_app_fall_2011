@@ -1,0 +1,56 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Effects - Effect demo</title>
+	<link rel="stylesheet" href="assets/js/effects/themes/base/jquery.ui.all.css">
+	<script src="assets/js/jquery-1.6.2.js"></script>
+	<script src="assets/js/effects/ui/jquery.effects.core.js"></script>
+	<script src="assets/js/effects/ui/jquery.effects.explode.js"></script>
+	<link rel="stylesheet" href="assets/js/effects/demos.css">
+	<style>
+		.toggler { width: 500px; height: 200px; position: relative; }
+		#effect { width: 240px; height: 135px; padding: 0.4em; position: relative; }
+		#effect h3 { margin: 0; padding: 0.4em; text-align: center; } 
+	</style>
+	<script>
+	$(function() {
+		// run the currently selected effect
+		function runEffect() {
+			// get effect type from 
+			var selectedEffect = "explode"
+			// most effect types need no options passed by default    
+			var options = {};
+
+			// run the effect
+			$( "#effect" ).effect( "explode", options, 500, callback );
+		};
+
+		// callback function to bring a hidden box back
+		function callback() {
+			setTimeout(function() {
+				$( "#effect" ).removeAttr( "style" ).hide().fadeIn();
+			}, 1000 );
+		};
+
+		// set effect from select menu value
+		$( ".toggler" ).click(function() {
+			runEffect();
+			return false;
+		});
+	});
+	</script>
+</head>
+<body>
+
+
+<div class="toggler">
+	<div id="effect" class="ui-widget-content ui-corner-all">
+		<h3 class="ui-widget-header ui-corner-all">Effect</h3>
+		<p>
+			Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+		</p>
+	</div>
+</div>
+
+</body>
+</html>
